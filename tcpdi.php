@@ -1,5 +1,5 @@
 <?php
-//  
+//
 //  TCPDI - Version 1.0
 //  Based on FPDI - Version 1.4.4
 //
@@ -482,8 +482,15 @@ class TCPDI extends FPDF_TPL {
                 $this->_straightOut('<<');
 
                 reset ($value[1]);
-
+/*
                 while (list($k, $v) = each($value[1])) {
+                    $this->_straightOut($k . ' ');
+                    $this->pdf_write_value($v);
+                }
+*/
+                // Function "each" has been DEPRECATED as of PHP 7.2.0
+                foreach($value[1] as $k=>$v)
+                {
                     $this->_straightOut($k . ' ');
                     $this->pdf_write_value($v);
                 }

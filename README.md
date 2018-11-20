@@ -5,7 +5,7 @@ Composer ready [TCPDI](https://github.com/pauln/tcpdi).
 
 PDF importer for [TCPDF](http://www.tcpdf.org/), based on [FPDI](http://www.setasign.de/products/pdf-php-solutions/fpdi/).
 Requires [pauln/tcpdi_parser](https://github.com/pauln/tcpdi_parser) and [FPDF_TPL](http://www.setasign.de/products/pdf-php-solutions/fpdi/downloads/)
-which included in the repository.
+which is included in the repository.
 
 Installation
 ------------
@@ -15,7 +15,7 @@ Link package in composer.json, e.g.
 ```json
 {
     "require": {
-        "jtripper/tcpdi": "dev-master"
+        "andreaventuri/tcpdi": "master"
     }
 }
 ```
@@ -36,11 +36,11 @@ $idx = $pdf->importPage(1);
 $pdf->useTemplate($idx);
 
 $pdfdata = file_get_contents('/path/to/other-file.pdf'); // Simulate only having raw data available.
-$pagecount = $pdf->setSourceData($pdfdata); 
-for ($i = 1; $i <= $pagecount; $i++) { 
+$pagecount = $pdf->setSourceData($pdfdata);
+for ($i = 1; $i <= $pagecount; $i++) {
     $tplidx = $pdf->importPage($i);
     $pdf->AddPage();
-    $pdf->useTemplate($tplidx); 
+    $pdf->useTemplate($tplidx);
 }
 ```
 
