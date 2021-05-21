@@ -1,6 +1,8 @@
 TCPDI
 =====
 
+**Compatible with PHP 8.**
+
 Composer ready [TCPDI](https://github.com/pauln/tcpdi).
 
 PDF importer for [TCPDF](http://www.tcpdf.org/), based on [FPDI](http://www.setasign.de/products/pdf-php-solutions/fpdi/).
