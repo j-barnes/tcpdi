@@ -1,14 +1,14 @@
 {
-	"name": "andreaventuri/tcpdi",
-	"version": "1.0.6",
+	"name": "j-barnes/tcpdi",
+	"version": "1.0.0",
 	"type": "library",
 	"description": "TCPDI is a PHP class for importing PDF to use with TCPDF",
 	"keywords": ["PDF", "tcpdi", "tcpdi_parser", "tcpdf"],
 	"license": "Apache-2.0",
 	"authors": [
 	{
-		"name": "Andrea Venturi",
-		"homepage": "https://www.andreaventuri.it"
+		"name": "Jordan Barnes",
+		"homepage": "https://www.jordan-barnes.com"
 	}
 	],
 	"require": {
